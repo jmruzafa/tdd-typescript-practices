@@ -1,4 +1,4 @@
-import { fizzBuzzOf } from "../src/fizzBuzz";
+import { fizzBuzzOf } from "../src/fizzBuzz/fizzBuzz";
 /* Write a function that takes positive integers and outputs 
 their string representation.
 
