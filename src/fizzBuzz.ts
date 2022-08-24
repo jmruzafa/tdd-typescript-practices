@@ -3,8 +3,8 @@ export function fizzBuzzOf(input: number) {
   const buzz = 'Buzz';
   
   if (input % 3 == 0) return fizz;
+  if(input % 5 == 0) return buzz;
   if (input == 2) return "2";
   if(input == 4) return '4';
-  if(input == 5) return buzz;
   return "1";
 }

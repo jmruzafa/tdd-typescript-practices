@@ -62,4 +62,7 @@ describe ("FizzBuzz Program", ()=>{
     it("should return 'Buzz' when passing 10", ()=>{
       expect(fizzBuzzOf(10)).toEqual(buzz);
     })
+    it("should return 'Buzz' when passing 20", ()=>{
+      expect(fizzBuzzOf(20)).toEqual(buzz);
+    })
  });
