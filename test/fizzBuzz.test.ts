@@ -48,4 +48,18 @@ describe ("FizzBuzz Program", ()=>{
     it("should return 'Buzz' when passing 5", ()=>{
       expect(fizzBuzzOf(5)).toEqual(buzz);
     })
+    //multiple of 3 => 'Fizz'
+    it("should return 'Fizz' when passing 6", ()=>{
+      expect(fizzBuzzOf(6)).toEqual(fizz);
+    })
+    it("should return 'Fizz' when passing 12", ()=>{
+      expect(fizzBuzzOf(12)).toEqual(fizz);
+    })
+    it("should return 'Fizz' when passing 18", ()=>{
+      expect(fizzBuzzOf(18)).toEqual(fizz);
+    })
+    //multiple of 5 => 'Buzz'
+    it("should return 'Buzz' when passing 10", ()=>{
+      expect(fizzBuzzOf(10)).toEqual(buzz);
+    })
  });
