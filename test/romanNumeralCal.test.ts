@@ -25,6 +25,12 @@ describe("Roman Numeral Calculator", () => {
     ["XXIII", 23],
     ["XL", 40],
     ["L", 50],
+    ["XC", 90],
+    ["C", 100],
+    ["CC", 200],
+    ["CD", 400],
+    ["D", 500],
+    ["CML", 950],
   ])("should return '%s' when passing %i", (expected, arg) => {
     expect(romanConverter(arg)).toBe(expected);
   });
