@@ -5,20 +5,16 @@ describe("Roman Numeral Calculator", () => {
     expect(romanConverter(0)).toEqual("");
   });
 
-  it("should return 'I~III' when getting 1~3", () => {
-    expect(romanConverter(1)).toEqual("I");
-    expect(romanConverter(2)).toEqual("II");
-    expect(romanConverter(3)).toEqual("III");
+  it.each([
+    ["", 0],
+    ["I", 1],
+    ["III", 3],
+    ["IV", 4],
+    ["V", 5],
+    ["VI", 6],
+    ["VII", 7],
+    ["VIII", 8],
+  ])("should return '%s' when passing %i", (expected, arg) => {
+    expect(romanConverter(arg)).toBe(expected);
   });
-  it("should return 'IV' when getting 4", () => {
-    expect(romanConverter(4)).toEqual("IV");
-  });
-
-  it("should return 'V' when getting 5", () => {
-    expect(romanConverter(5)).toEqual("V");
-  });
-  /*
-  it("should return 'X' when getting 10", () => {
-    expect(romanConverter(10)).toEqual("X");
-  }); */
 });
