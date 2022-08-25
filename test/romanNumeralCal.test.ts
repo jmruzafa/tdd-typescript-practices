@@ -13,12 +13,11 @@ describe("Roman Numeral Calculator", () => {
   it("should return 'IV' when getting 4", () => {
     expect(romanConverter(4)).toEqual("IV");
   });
-  
-  
 
-  /*  it("should return 'V' when getting 5", () => {
+  it("should return 'V' when getting 5", () => {
     expect(romanConverter(5)).toEqual("V");
   });
+  /*
   it("should return 'X' when getting 10", () => {
     expect(romanConverter(10)).toEqual("X");
   }); */
